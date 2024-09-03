@@ -41,7 +41,7 @@ body {
 .section-two,
 .section-three,
 .section-four {
-    height: 25rem;
+    min-height: 25rem;
     flex: 1 1 auto;
 }
 
@@ -51,37 +51,90 @@ body {
 
 .section-two {
     background-color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 4rem 7rem;
+}
+
+.friends {
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.friends-body {
+    flex: 1;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.friend1,
+.friend2,
+.friend3,
+.friend4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.friend1 img,
+.friend2 img,
+.friend3 img,
+.friend4 img {
+    flex: 1;
+    border-radius: 15px;
+    border: 5px solid #3882F6;
+    width: 15rem;
+    height: auto;
+}
+
+p {
+    flex: 1;
+    margin: 10px 0 0 0;
+    text-align: center;
+    text-wrap: wrap;
+    width:15rem;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .section-three {
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 50px 450px;
-    gap: 5px;
+    padding: 7rem 12rem;
+    gap: 1rem;
 }
 
 .quote {
+    flex: 1;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 36px;
     color: #1F2937;
     margin: 0;
     text-align: justify;
+    text-wrap: wrap;
 }
 
 .quote-by {
     font-weight: 400;
     font-size: 30px;
     margin: 0;
+    text-align: right;
     align-self: flex-end;
+    justify-self: center;
+    min-width: 25rem;
 }
 
 .section-four {
     background-color: #F9FAF8;
     display: flex;
-    padding: 120px 220px;
+    padding: 7rem 12rem;
 }
 
 .blue-card,
@@ -93,9 +146,17 @@ button {
     border-radius: 20px;
     flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
+    gap: 25rem;
     align-items: center;
-    padding: 0 9em;
+    padding: 0 6em;
+}
+
+.blue-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
 }
 
 .b2,
@@ -119,16 +180,9 @@ button {
 }
 
 .action {
-    font-size: 20px;
-    font-weight: 300;
+    width: auto;
     margin: 0;
-}
-
-.blue-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 8px;
+    text-align: left;
 }
 
 ul {
