@@ -25,16 +25,15 @@ body {
 }
 
 .header {
-    padding: 1rem 15rem;
+    padding: 0.5rem 10rem 0 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: bold;
+.logo img {
+    width: 9rem;
+    height: auto;
 }
 
 .section-one,
@@ -46,7 +45,47 @@ body {
 }
 
 .section-one {
+    display: flex;
+    justify-content: center;
+    padding: 0 10rem;
+    gap: 5rem;
+}
 
+.s1-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.s1-content h1 {
+    font-weight: 900;
+    font-size: 48px;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.s1-content .b2 {
+    width: fit-content;
+    margin-top: 1.5rem;
+    border-width: 0;
+}
+
+.s1-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    width: auto;
+}
+
+.s1-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s1-image img {
+    flex: 1;
+    width: 23rem;
+    height: auto;
 }
 
 .section-two {
@@ -55,7 +94,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 4rem 7rem;
+    padding: 2rem 7rem;
 }
 
 .friends {
@@ -94,8 +133,7 @@ body {
 
 p {
     flex: 1;
-    margin: 10px 0 0 0;
-    text-align: center;
+    margin: 1rem 0 0 0;
     text-wrap: wrap;
     width:15rem;
     font-size: 20px;
@@ -147,12 +185,13 @@ button {
     flex: 1;
     display: flex;
     justify-content:center;
-    gap: 25rem;
+    gap: 5rem;
     align-items: center;
-    padding: 0 6em;
+    padding: 1rem 6em;
 }
 
 .blue-text {
+    flex: 5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -171,12 +210,12 @@ button {
 }
 
 .b2 {
+    flex: 1;
     border: 2px solid #F9FAF8;
     border-radius: 20px;
-    padding: 10px 45px;
+    padding: 0.5rem 1.5rem;
     font-weight: bold;
     font-size: 20px;
-    text-wrap: nowrap;
 }
 
 .action {
@@ -191,7 +230,7 @@ ul {
     padding: 0;
     margin: 0;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 3rem;
 }
 
 a,
